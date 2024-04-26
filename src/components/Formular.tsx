@@ -32,8 +32,7 @@ export function ServiceForm(props: ServiceFormProps) {
     };
     const [showList, setShowList] = useState(false);
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-        const {name, value} = event.target;
-
+        const { name, value } = event.target as HTMLInputElement;
         setFormData({
             ...formData,
             [name]: value,
