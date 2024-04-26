@@ -32,7 +32,8 @@ export function ServiceForm(props: ServiceFormProps) {
     };
     const [showList, setShowList] = useState(false);
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-        const { name, value } = event.target as HTMLInputElement;
+        const {name, value} = event.target;
+
         setFormData({
             ...formData,
             [name]: value,
@@ -98,7 +99,7 @@ export function ServiceForm(props: ServiceFormProps) {
 
             <label className={styles.serviceLabel}>
                 Unterkunftstyp:
-                <select className={styles.serviceSelect} name="locationtype" value={formData.locationtype}
+                <select className={styles.serviceSelect} name="locationType" value={formData.locationtype}
                         onChange={handleInputChange}>
                     <option value="">Bitte auswählen</option>
                     <option value="hotel">Hotel</option>
@@ -114,7 +115,7 @@ export function ServiceForm(props: ServiceFormProps) {
 
     {
         showList &&
-        <Packlist/>
+        <Packlist name="robert"/>
     }
 </>
 )
