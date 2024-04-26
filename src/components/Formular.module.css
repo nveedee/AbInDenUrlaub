@@ -1,0 +1,47 @@
+.serviceFormContainer {
+    margin: 5rem 5rem 5rem 10rem; /* Kleiner Abstand vom linken Rand */
+    padding: 5px;
+    display: flex;
+    justify-content: center; /* Zentriert das Formular horizontal */
+}
+
+.serviceForm {
+    background-color: rgba(72, 72, 72, 0.8);
+    padding: 0.5rem;
+    width: 300px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.serviceLabel {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #ffffff;
+}
+
+.serviceInput,
+.serviceSelect {
+    width: calc(100% - 1rem);
+    padding: 0.3rem;
+    border-radius: 3px;
+    margin-bottom: 0.7rem;
+}
+
+.serviceInput[type="range"] {
+    width: calc(90% - 2rem);
+    margin-right: 0.7rem;
+}
+
+.serviceButton {
+    background-color: #ffd300;
+    color: #000000;
+    padding: 0.3rem 0.7rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.serviceButton:hover {
+    background-color: #FFC100;
+}
