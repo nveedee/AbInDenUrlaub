@@ -9,7 +9,7 @@ function Header() {
             <div className={styles.headerContent}>
                 <span className={styles.madeByText}>Made by</span>
                 <a href="https://princesscandytail.github.io/prinkwebdreams/mitarbeiter.html">
-                    <img src="../../public/UnicornLogo.png" alt="Ab in den Urlaub" className={styles.headerImage} />
+                    <img src="public/UnicornLogo.png" alt="Ab in den Urlaub" className={styles.headerImage} />
                 </a>
 
             </div>
